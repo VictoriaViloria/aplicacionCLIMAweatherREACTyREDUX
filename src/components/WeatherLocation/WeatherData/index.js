@@ -43,7 +43,4 @@ WeatherData.propTypes ={
     wind: PropTypes.string.isRequired,
   }),
 };
-
-
-
 export default WeatherData;

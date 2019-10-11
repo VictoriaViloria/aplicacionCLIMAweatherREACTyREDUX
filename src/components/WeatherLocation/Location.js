@@ -7,7 +7,7 @@ const Location = (props)=> {
   // debugger;
   //const city = props.city;
   // Destructuring
-  const {city, pais} = props;
+  const {city} = props;
 
   return (
   <div className="locationCont">

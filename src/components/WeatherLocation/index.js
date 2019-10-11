@@ -119,24 +119,24 @@ componentDidUpdate(prevProps, prevState){
     // });
 
   }
-
+//aqui epa
   render() {
     console.log("render");
     const { onWeatherLocationClick } = this.props; // 66
     const {city, data } = this.state;
     return (
       // <div className="weatherLocatioCont">
-      <div className="weatherLocatioCont" onClick={ onWeatherLocationClick} > { /* 66 */ }
-        <Location city={city} pais={'mexico lindo y querido'}></Location>
+      <div className="weatherLocationCont" onClick={ onWeatherLocationClick} > { /* 66 */ }
+        <Location city={city}></Location>
         {data ?
-          <WeatherData data = {data}></WeatherData> :
+          <WeatherData data = {data} /> :
           //{ /* "Cargando..." */ }
-          <CircularProgress size={60}/>
+          <CircularProgress size={60} thickness={7}/>
         }
          {/* <button onClick={ this.handleUpdateClick }>Actualizar</button> */}
-      </div>
-  )};
-};
+      </div>);
+  };
+}
 WeatherLocation.propTypes = {
   city: PropTypes.string.isRequired,
   onWeatherLocationClick: PropTypes.func,  //66
